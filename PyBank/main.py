@@ -4,7 +4,7 @@ import csv
 #create csv path
 budget_data_csv = os.path.join( "Resources", "budget_data.csv")
 
-#open and read csv, total months
+#open and read csv
 with open(budget_data_csv) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
 
@@ -17,7 +17,7 @@ with open(budget_data_csv) as csvfile:
     profit_change = []
     
                       
-    #iterate through the values and add them to the empty list 
+    #find values and add to list
     for row in csvreader:
         month_count.append(row[0])
         total_profit.append(int(row[1]))
