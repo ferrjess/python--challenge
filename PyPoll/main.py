@@ -54,7 +54,6 @@ for name in zip_data:
 # winner list
 winner = winner_list[0]
 
-#only runs if there is a len(winner_list) > 1:
 for w in range(1, len(winner_list)):
         winner = winner + ", " + winner_list[w]
 
